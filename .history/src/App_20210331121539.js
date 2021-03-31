@@ -24,19 +24,16 @@ function App() {
       reminder: true,
     },
   ]);
-
-  // show add form
   const onClickAdd = () => {
-    setShowAdd(!showAdd);
+    console.log("bla");
   };
 
-  // save task
+  // add task
   const onSaveTask = (task) => {
     let randId = new Date().getTime();
     const newTask = { id: randId, ...task };
     console.log(newTask);
     setTasks([...tasks, newTask]);
-    setShowAdd(false);
   };
 
   //delete task
@@ -54,8 +51,6 @@ function App() {
   return (
     <div className="App">
       <Header
-        showAdd={showAdd}
-        setShowAdd={setShowAdd}
         title={"Task tracker"}
         onDelete={onDelete}
         onSaveTask={onSaveTask}

@@ -21,7 +21,8 @@ const Header = ({
         onClick={onClickAdd}
         showAdd={showAdd}
         setShowAdd={setShowAdd}
-        // color={showAdd? 'green' : 'red'}
+        // color="yellow"
+        text="BLAS"
       />
       {showAdd && <AddTask onSaveTask={onSaveTask} />}
       <Tasks onDelete={onDelete} onDubleClick={onDubleClick} tasks={tasks} />

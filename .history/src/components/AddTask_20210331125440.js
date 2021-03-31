@@ -55,7 +55,7 @@ const AddTask = ({ onSaveTask }) => {
           onChange={(e) => setRemainder(e.currentTarget.checked)}
         />
       </div>
-      <input className="saveTask" type="submit" value="Save task" />
+      <input type="submit" value="Save task" />
     </form>
   );
 };

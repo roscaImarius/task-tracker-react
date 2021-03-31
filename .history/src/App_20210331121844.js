@@ -27,16 +27,15 @@ function App() {
 
   // show add form
   const onClickAdd = () => {
-    setShowAdd(!showAdd);
+    setShowAdd(true);
   };
 
-  // save task
+  // add task
   const onSaveTask = (task) => {
     let randId = new Date().getTime();
     const newTask = { id: randId, ...task };
     console.log(newTask);
     setTasks([...tasks, newTask]);
-    setShowAdd(false);
   };
 
   //delete task

@@ -1,45 +1,38 @@
 .App {
   text-align: center;
 }
-body {
-  background-color: black;
-  color: white;
-}
 
 /* HEADER */
-.header-container {
+.header-container{
   display: flex;
   flex-direction: column;
 }
-.add-btn {
-  background-color: black;
-  color: rgb(2, 13, 22);
+.add-btn{
   margin: auto;
-  width: 30%;
+  width: 50%;
 }
 .task {
   display: flex;
   justify-content: space-between;
   padding-left: 20px;
   margin: auto;
-  line-height: 5px;
-  margin-bottom: 5px;
-  border: 1px solid rgb(204, 186, 186);
-  width: 80%;
-  text-align: start;
+line-height: 5px;
+margin-bottom: 5px;
+border: 1px solid red;
+width: 80%;
+text-align: start;
 }
-.x {
+.x{
   margin-right: 10px;
-  color: rgb(82, 201, 67);
   margin: auto 5px;
   cursor: pointer;
   padding: 5px;
 }
-.marked {
-  background-color: rgba(161, 236, 100, 0.5);
+.marked{
+  background-color: rgb(161, 236, 100);
 }
 /* FORM */
-.form-field {
+.form-field{
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -47,17 +40,11 @@ body {
   width: 80%;
   box-sizing: border-box;
 }
-.form-container {
+.form-container{
   margin: auto;
   width: 70%;
   display: inline-block;
   padding: 10px;
   border: 1px solid gray;
   margin-bottom: 10px;
-}
-.saveTask {
-  background-color: rgb(194, 192, 192);
-}
-input {
-  background-color: rgb(209, 206, 206);
 }

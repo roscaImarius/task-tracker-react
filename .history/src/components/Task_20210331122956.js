@@ -5,7 +5,7 @@ const Task = ({ t, onDubleClick, onDelete }) => {
   return (
     <div
       onDoubleClick={() => onDubleClick(t.id)}
-      className={t.reminder ? "marked task" : "task"}
+      className={t.reminder === true ? "marked task" : "task"}
     >
       <div>
         <p>{t.text}</p>

@@ -7,7 +7,7 @@ const Button = ({ color, showAdd, onClick }) => {
       style={{ backgroundColor: color, marginBottom: "10px" }}
       className="add-btn"
     >
-      {showAdd ? "Cancel add task " : "Add task"}
+      {/* {showAdd ? "Cancel add task " : "Add task"} */}
     </button>
   );
 };

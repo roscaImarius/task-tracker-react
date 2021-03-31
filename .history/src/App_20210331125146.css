@@ -12,10 +12,8 @@ body {
   flex-direction: column;
 }
 .add-btn {
-  background-color: black;
-  color: rgb(2, 13, 22);
   margin: auto;
-  width: 30%;
+  width: 50%;
 }
 .task {
   display: flex;
@@ -24,13 +22,13 @@ body {
   margin: auto;
   line-height: 5px;
   margin-bottom: 5px;
-  border: 1px solid rgb(204, 186, 186);
+  border: 1px solid rgb(170, 220, 90);
   width: 80%;
   text-align: start;
 }
 .x {
   margin-right: 10px;
-  color: rgb(82, 201, 67);
+  color: rgb(140, 71, 71);
   margin: auto 5px;
   cursor: pointer;
   padding: 5px;
@@ -54,10 +52,4 @@ body {
   padding: 10px;
   border: 1px solid gray;
   margin-bottom: 10px;
-}
-.saveTask {
-  background-color: rgb(194, 192, 192);
-}
-input {
-  background-color: rgb(209, 206, 206);
 }

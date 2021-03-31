@@ -11,8 +11,8 @@ const Button = ({ color, showAdd, onClick }) => {
     </button>
   );
 };
-Button.defaultProps = {
-  color: " rgb(194, 192, 192)",
-};
+// Button.defaultProps = {
+//   color: "blue",
+// };
 
 export default Button;

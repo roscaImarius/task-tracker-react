@@ -20,7 +20,7 @@ const AddTask = ({ onSaveTask }) => {
     setRemainder(false);
   };
 
-  //   console.log(text, date, remainder);
+  console.log(text, date, remainder);
   return (
     <form className="form-container" onSubmit={onSubmit}>
       <div className="form-field">
@@ -55,7 +55,7 @@ const AddTask = ({ onSaveTask }) => {
           onChange={(e) => setRemainder(e.currentTarget.checked)}
         />
       </div>
-      <input className="saveTask" type="submit" value="Save task" />
+      <input type="submit" value="Save task" />
     </form>
   );
 };

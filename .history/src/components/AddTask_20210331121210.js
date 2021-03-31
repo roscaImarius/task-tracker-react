@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const AddTask = ({ onSaveTask }) => {
+const AddTask = ({ onAdd }) => {
   const [text, setText] = useState("");
   const [date, setDate] = useState("");
   const [remainder, setRemainder] = useState(false);
@@ -13,14 +13,14 @@ const AddTask = ({ onSaveTask }) => {
       return;
     }
 
-    onSaveTask({ text, date, remainder });
+    onAdd({ text, date, remainder });
 
     setText("");
     setDate("");
     setRemainder(false);
   };
 
-  //   console.log(text, date, remainder);
+  console.log(text, date, remainder);
   return (
     <form className="form-container" onSubmit={onSubmit}>
       <div className="form-field">
@@ -55,7 +55,7 @@ const AddTask = ({ onSaveTask }) => {
           onChange={(e) => setRemainder(e.currentTarget.checked)}
         />
       </div>
-      <input className="saveTask" type="submit" value="Save task" />
+      <input type="submit" value="Save task" />
     </form>
   );
 };

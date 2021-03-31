@@ -7,12 +7,12 @@ const Button = ({ color, showAdd, onClick }) => {
       style={{ backgroundColor: color, marginBottom: "10px" }}
       className="add-btn"
     >
-      {showAdd ? "Cancel add task " : "Add task"}
+      {showAdd ? "Cancel Add task " : "Add task"}
     </button>
   );
 };
 Button.defaultProps = {
-  color: " rgb(194, 192, 192)",
+  color: "blue",
 };
 
 export default Button;

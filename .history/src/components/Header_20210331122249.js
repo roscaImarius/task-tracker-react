@@ -1,4 +1,4 @@
-import React from "react";
+import React, from "react";
 import PropTypes from "prop-types";
 import Tasks from "./Tasks";
 import Button from "./Button";
@@ -17,12 +17,8 @@ const Header = ({
   return (
     <header className="header-container">
       <h1>{title}</h1>
-      <Button
-        onClick={onClickAdd}
-        showAdd={showAdd}
-        setShowAdd={setShowAdd}
-        // color={showAdd? 'green' : 'red'}
-      />
+      <Button onClick={onClickAdd} color="yellow" />
+
       {showAdd && <AddTask onSaveTask={onSaveTask} />}
       <Tasks onDelete={onDelete} onDubleClick={onDubleClick} tasks={tasks} />
     </header>

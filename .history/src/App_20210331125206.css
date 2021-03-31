@@ -12,10 +12,8 @@ body {
   flex-direction: column;
 }
 .add-btn {
-  background-color: black;
-  color: rgb(2, 13, 22);
   margin: auto;
-  width: 30%;
+  width: 50%;
 }
 .task {
   display: flex;
@@ -54,10 +52,4 @@ body {
   padding: 10px;
   border: 1px solid gray;
   margin-bottom: 10px;
-}
-.saveTask {
-  background-color: rgb(194, 192, 192);
-}
-input {
-  background-color: rgb(209, 206, 206);
 }
